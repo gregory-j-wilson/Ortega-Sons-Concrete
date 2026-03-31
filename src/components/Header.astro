@@ -15,16 +15,16 @@ function isActive(href: string) {
 }
 ---
 
-<header class="bg-navy shadow-lg sticky top-0 z-50">
+<header class="bg-cream shadow-lg sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-20">
+    <div class="flex items-center justify-between h-32">
 
       <!-- Logo -->
       <a href="/" class="flex items-center flex-shrink-0">
         <img
           src="/img/ortega-and-sons--logo.png"
           alt="Ortega & Sons Concrete"
-          class="h-14 w-auto"
+          class="h-auto w-[150px]"
         />
       </a>
 
@@ -48,7 +48,7 @@ function isActive(href: string) {
         id="menu-toggle"
         aria-label="Toggle navigation"
         aria-expanded="false"
-        class="md:hidden text-cream p-1 focus:outline-none focus:ring-2 focus:ring-beige rounded"
+        class="md:hidden text-navy p-1 focus:outline-none focus:ring-2 focus:ring-gold rounded"
       >
         <!-- Bars icon -->
         <svg class="icon-bars h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -66,7 +66,7 @@ function isActive(href: string) {
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="md:hidden bg-navy border-t border-gold/30">
+  <div id="mobile-menu" class="md:hidden bg-cream border-t border-navy/20">
     <nav class="flex flex-col px-6 py-5 gap-5" aria-label="Mobile navigation">
       {navLinks.map(link => (
         <a

@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ─── Navigation ────────────────────────────────────────────── */
 .nav-link {
-  color: var(--cream);
+  color: var(--navy);
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -123,12 +123,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--beige);
+  background-color: var(--gold);
   transition: width 0.2s ease;
 }
 .nav-link:hover,
 .nav-link.active {
-  color: var(--beige);
+  color: var(--gold);
 }
 .nav-link:hover::after,
 .nav-link.active::after {
