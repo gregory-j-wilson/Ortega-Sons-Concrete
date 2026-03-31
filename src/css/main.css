@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ────────────────────────────────── */
+:root {
+  --navy:        #1B2A47;
+  --beige:       #C9A96E;
+  --cream:       #F5EDD6;
+  --gold:        #9B7B3C;
+  --cream-light: #FAF8F2;
+  --radius:      10px;
+  --border-dark: 1px solid #1B2A47;
+  --border-gold: 1px solid #9B7B3C;
+  --border-cream: 1px solid #F5EDD6;
+}
+
+/* ─── Base ──────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--cream-light);
+  color: var(--navy);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ─── Brand Card (light bg) ─────────────────────────────────── */
+.brand-card {
+  border-radius: var(--radius);
+  border: var(--border-dark);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.brand-card:hover {
+  box-shadow: 0 8px 24px rgba(27, 42, 71, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Brand Card on dark backgrounds */
+.brand-card--light {
+  border-radius: var(--radius);
+  border: var(--border-gold);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.brand-card--light:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ─── Buttons ───────────────────────────────────────────────── */
+.btn {
+  display: inline-block;
+  border-radius: var(--radius);
+  padding: 0.75rem 2rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--navy);
+  color: var(--cream);
+  border: 1px solid var(--navy);
+}
+.btn-primary:hover {
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--cream);
+  border: 1px solid var(--cream);
+}
+.btn-secondary:hover {
+  background-color: var(--cream);
+  color: var(--navy);
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--cream);
+  border: 1px solid var(--gold);
+}
+.btn-gold:hover {
+  background-color: var(--beige);
+  border-color: var(--beige);
+  color: var(--navy);
+}
+
+.btn-outline-navy {
+  background-color: transparent;
+  color: var(--navy);
+  border: 1px solid var(--navy);
+}
+.btn-outline-navy:hover {
+  background-color: var(--navy);
+  color: var(--cream);
+}
+
+/* ─── Navigation ────────────────────────────────────────────── */
+.nav-link {
+  color: var(--cream);
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--beige);
+  transition: width 0.2s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: var(--beige);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ─── Mobile Menu ───────────────────────────────────────────── */
+#mobile-menu {
+  display: none;
+}
+#mobile-menu.open {
+  display: block;
+}
+
+/* ─── Hero ──────────────────────────────────────────────────── */
+.hero-overlay {
+  background: linear-gradient(
+    105deg,
+    rgba(27, 42, 71, 0.90) 0%,
+    rgba(27, 42, 71, 0.55) 60%,
+    rgba(27, 42, 71, 0.30) 100%
+  );
+}
+
+.page-hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(27, 42, 71, 0.85) 0%,
+    rgba(27, 42, 71, 0.65) 100%
+  );
+}
+
+/* ─── Section Divider ───────────────────────────────────────── */
+.section-label {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+/* ─── Stats ─────────────────────────────────────────────────── */
+.stat-number {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--beige);
+  line-height: 1;
+}
+
+/* ─── Service Icon Box ──────────────────────────────────────── */
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  background-color: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ─── Project Card Image ────────────────────────────────────── */
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── Contact Form ──────────────────────────────────────────── */
+.form-input {
+  width: 100%;
+  border-radius: var(--radius);
+  border: var(--border-dark);
+  background-color: white;
+  padding: 0.75rem 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--navy);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+.form-input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(155, 123, 60, 0.15);
+}
+
+.form-label {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+
+/* ─── Utility ───────────────────────────────────────────────── */
+.bg-navy-section {
+  background-color: var(--navy);
+  color: var(--cream);
+}
+.bg-cream-section {
+  background-color: var(--cream);
+}
+.text-gold {
+  color: var(--gold);
+}
+.border-brand {
+  border-radius: var(--radius);
+  border: var(--border-dark);
+}

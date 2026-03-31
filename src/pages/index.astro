@@ -1,0 +1,267 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+
+  <!-- ─── HERO ──────────────────────────────────────────────── -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+    <img
+      src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80"
+      alt="Concrete construction work"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="hero-overlay absolute inset-0"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <span class="section-label text-beige">Wichita, KS &amp; Surrounding Areas</span>
+      <h1 class="font-heading text-cream text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mt-2 mb-6">
+        Clean-Cut Concrete.<br />
+        <span class="text-beige">Residential & Commercial.</span>
+      </h1>
+      <p class="text-cream/80 text-lg sm:text-xl max-w-xl mb-10 leading-relaxed">
+        Ortega &amp; Sons Concrete delivers expert residential and commercial
+        concrete work — from driveways and patios to full commercial slabs.
+        Family-owned, locally trusted.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="/contact" class="btn btn-gold">Get a Free Estimate</a>
+        <a href="/services" class="btn btn-secondary">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES OVERVIEW ─────────────────────────────────── -->
+  <section class="py-20 bg-cream-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="section-label">What We Do</span>
+        <h2 class="font-heading text-navy text-4xl font-bold mt-1">
+          Concrete Solutions for Every Need
+        </h2>
+        <p class="text-navy/60 mt-3 max-w-xl mx-auto text-sm">
+          From small residential pours to large-scale commercial projects, we handle
+          it all with precision and pride.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="brand-card bg-white p-8">
+          <div class="icon-box mb-5">
+            <svg class="w-7 h-7 text-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3 class="font-heading text-navy text-xl font-semibold mb-3">Commercial Concrete</h3>
+          <p class="text-navy/65 text-sm leading-relaxed">
+            Parking lots, warehouse floors, loading docks, sidewalks, and large-scale
+            commercial slabs. We work with contractors and business owners to meet
+            project specs and timelines.
+          </p>
+          <a href="/services" class="inline-flex items-center gap-1 text-gold font-heading text-sm uppercase tracking-wide mt-5 hover:text-beige transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="brand-card bg-white p-8">
+          <div class="icon-box mb-5">
+            <svg class="w-7 h-7 text-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </div>
+          <h3 class="font-heading text-navy text-xl font-semibold mb-3">Residential Concrete</h3>
+          <p class="text-navy/65 text-sm leading-relaxed">
+            Driveways, garage floors, walkways, and patios that enhance your home's
+            curb appeal and value. We bring the same professionalism to every
+            residential job, big or small.
+          </p>
+          <a href="/services" class="inline-flex items-center gap-1 text-gold font-heading text-sm uppercase tracking-wide mt-5 hover:text-beige transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="brand-card bg-white p-8">
+          <div class="icon-box mb-5">
+            <svg class="w-7 h-7 text-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 class="font-heading text-navy text-xl font-semibold mb-3">Custom &amp; Specialty Work</h3>
+          <p class="text-navy/65 text-sm leading-relaxed">
+            Stamped concrete, exposed aggregate, colored finishes, and decorative
+            borders. We help you achieve a look that's as beautiful as it is durable.
+          </p>
+          <a href="/services" class="inline-flex items-center gap-1 text-gold font-heading text-sm uppercase tracking-wide mt-5 hover:text-beige transition-colors">
+            Learn More
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT TEASER ──────────────────────────────────────── -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1590725140246-20acddc1ec6d?auto=format&fit=crop&w=900&q=80"
+            alt="Ortega & Sons Concrete crew at work"
+            class="rounded-brand border border-gold/40 w-full h-[420px] object-cover"
+          />
+        </div>
+
+        <div class="text-cream">
+          <span class="section-label">Our Story</span>
+          <h2 class="font-heading text-cream text-4xl font-bold mt-1 mb-5">
+            A Family Built on<br />
+            <span class="text-beige">Hard Work &amp; Concrete</span>
+          </h2>
+          <p class="text-cream/70 leading-relaxed mb-4">
+            Eleazar Ortega founded this company on a simple belief: if you do the
+            work right the first time, the customers come back — and so do their
+            neighbors. Together with his sons, he's built a reputation across
+            Wichita for showing up on time, communicating clearly, and delivering
+            results that stand the test of time.
+          </p>
+          <p class="text-cream/70 leading-relaxed mb-8">
+            We're not a big corporation. We're a family that takes pride in
+            every square foot we pour. That means you get experienced hands and
+            personal attention on every project.
+          </p>
+          <a href="/about" class="btn btn-secondary">Meet the Team</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── STATS ─────────────────────────────────────────────── -->
+  <section class="py-16 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="brand-card bg-white p-8">
+          <div class="stat-number">15+</div>
+          <p class="font-heading text-navy/70 uppercase tracking-wider text-xs mt-2">Years Experience</p>
+        </div>
+        <div class="brand-card bg-white p-8">
+          <div class="stat-number">500+</div>
+          <p class="font-heading text-navy/70 uppercase tracking-wider text-xs mt-2">Projects Completed</p>
+        </div>
+        <div class="brand-card bg-white p-8">
+          <div class="stat-number">100%</div>
+          <p class="font-heading text-navy/70 uppercase tracking-wider text-xs mt-2">Licensed &amp; Insured</p>
+        </div>
+        <div class="brand-card bg-white p-8">
+          <div class="stat-number">5★</div>
+          <p class="font-heading text-navy/70 uppercase tracking-wider text-xs mt-2">Customer Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RECENT PROJECTS ───────────────────────────────────── -->
+  <section class="py-20 bg-cream-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="section-label">Our Work</span>
+          <h2 class="font-heading text-navy text-4xl font-bold mt-1">Recent Projects</h2>
+        </div>
+        <a href="/projects" class="btn btn-outline-navy text-sm py-2.5 px-5 self-start sm:self-auto">
+          View All Projects
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="brand-card bg-white group">
+          <div class="overflow-hidden rounded-t-brand">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              alt="Residential driveway project"
+              class="project-img group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <span class="font-heading text-xs uppercase tracking-widest text-gold">Residential</span>
+            <h3 class="font-heading text-navy text-lg font-semibold mt-1">Stamped Concrete Driveway</h3>
+            <p class="text-navy/60 text-sm mt-2">Double-wide stamped driveway with decorative border and sealer finish.</p>
+          </div>
+        </div>
+
+        <div class="brand-card bg-white group">
+          <div class="overflow-hidden rounded-t-brand">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+              alt="Commercial concrete project"
+              class="project-img group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <span class="font-heading text-xs uppercase tracking-widest text-gold">Commercial</span>
+            <h3 class="font-heading text-navy text-lg font-semibold mt-1">Warehouse Loading Dock</h3>
+            <p class="text-navy/60 text-sm mt-2">Heavy-duty reinforced slab and apron for a distribution warehouse.</p>
+          </div>
+        </div>
+
+        <div class="brand-card bg-white group">
+          <div class="overflow-hidden rounded-t-brand">
+            <img
+              src="https://images.unsplash.com/photo-1523413555609-be67a1ede53e?auto=format&fit=crop&w=800&q=80"
+              alt="Concrete patio project"
+              class="project-img group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div class="p-6">
+            <span class="font-heading text-xs uppercase tracking-widest text-gold">Residential</span>
+            <h3 class="font-heading text-navy text-lg font-semibold mt-1">Backyard Patio &amp; Walkway</h3>
+            <p class="text-navy/60 text-sm mt-2">Custom patio pour with aggregate finish connecting to side-yard walkway.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA BANNER ────────────────────────────────────────── -->
+  <section class="py-20 bg-navy relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10"
+      style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80'); background-size: cover; background-position: center;">
+    </div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="section-label">Ready to Start?</span>
+      <h2 class="font-heading text-cream text-4xl sm:text-5xl font-bold mt-2 mb-5">
+        Let's Talk About<br />
+        <span class="text-beige">Your Project</span>
+      </h2>
+      <p class="text-cream/70 mb-10 leading-relaxed">
+        Whether you're planning a new driveway, a commercial slab, or a decorative
+        patio — we'll give you an honest estimate and a clear timeline. No runaround.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/contact" class="btn btn-gold">Request a Free Quote</a>
+        <a href="/projects" class="btn btn-secondary">See Our Work</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

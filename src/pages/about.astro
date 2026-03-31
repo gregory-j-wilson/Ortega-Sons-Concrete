@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const values = [
+  {
+    icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+    title: 'Quality First',
+    body: 'We never cut corners. Every mix ratio, every pour, every finish is done to last decades — not just look good for the inspection.',
+  },
+  {
+    icon: 'M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z',
+    title: 'Family Values',
+    body: "We treat your property like it's our own. A family business means your satisfaction is personal — our reputation is on the line with every job.",
+  },
+  {
+    icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z',
+    title: 'On Time, Every Time',
+    body: 'We respect your schedule. From showing up to the estimate on time to hitting project milestones, we communicate every step of the way.',
+  },
+  {
+    icon: 'M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3',
+    title: 'Fair &amp; Transparent',
+    body: "No surprise charges. We walk you through our quotes line-by-line and only do work we've agreed to in advance.",
+  },
+];
+---
+
+<Layout title="About Us" description="Meet Eleazar Ortega and his sons — a family concrete business serving Wichita, KS with quality, integrity, and craftsmanship.">
+
+  <!-- ─── PAGE HERO ─────────────────────────────────────────── -->
+  <section class="relative h-72 sm:h-96 flex items-end overflow-hidden">
+    <img
+      src="https://images.unsplash.com/photo-1590725140246-20acddc1ec6d?auto=format&fit=crop&w=1800&q=80"
+      alt="Ortega & Sons crew at work"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="page-hero-overlay absolute inset-0"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
+      <span class="section-label">Who We Are</span>
+      <h1 class="font-heading text-cream text-4xl sm:text-5xl font-bold mt-1">About Us</h1>
+    </div>
+  </section>
+
+  <!-- ─── OUR STORY ─────────────────────────────────────────── -->
+  <section class="py-20 bg-cream-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+        <div>
+          <span class="section-label">Our Story</span>
+          <h2 class="font-heading text-navy text-4xl font-bold mt-1 mb-6">
+            Built From the Ground Up
+          </h2>
+          <p class="text-navy/70 leading-relaxed mb-5">
+            Eleazar Ortega started laying concrete as a young man, learning the trade
+            from the ground up — literally. What began as a one-man operation in the
+            Wichita area grew naturally as his sons came of age and joined the business,
+            bringing with them the same work ethic their father modeled every day.
+          </p>
+          <p class="text-navy/70 leading-relaxed mb-5">
+            Today, Ortega &amp; Sons Concrete is a recognized name throughout Sedgwick
+            County. We've poured driveways for growing families, foundations for new
+            businesses, and parking lots for commercial developments — all with the same
+            level of care that built this company from scratch.
+          </p>
+          <p class="text-navy/70 leading-relaxed">
+            We remain family-owned and operated because we believe that accountability
+            starts at home. When Eleazar signs off on a job, his name — and his family's
+            name — is on every square foot of it.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <img
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+            alt="Concrete work in progress"
+            class="rounded-brand border border-navy w-full h-64 object-cover"
+          />
+          <div class="grid grid-cols-2 gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80"
+              alt="Commercial construction"
+              class="rounded-brand border border-navy w-full h-44 object-cover"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
+              alt="Finished driveway"
+              class="rounded-brand border border-navy w-full h-44 object-cover"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MEET THE TEAM ─────────────────────────────────────── -->
+  <section class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="section-label">The People Behind the Pour</span>
+        <h2 class="font-heading text-navy text-4xl font-bold mt-1">Meet the Team</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Eleazar -->
+        <div class="brand-card bg-white text-center p-8">
+          <div class="w-24 h-24 rounded-full bg-navy mx-auto mb-5 flex items-center justify-center">
+            <span class="font-heading text-beige text-3xl font-bold">EO</span>
+          </div>
+          <h3 class="font-heading text-navy text-xl font-semibold">Eleazar Ortega</h3>
+          <p class="text-gold font-heading text-sm uppercase tracking-wider mt-1 mb-4">Founder &amp; Master Concrete Finisher</p>
+          <p class="text-navy/60 text-sm leading-relaxed">
+            With over 20 years in the trade, Eleazar oversees all projects and
+            ensures every job meets his personal standard of excellence.
+          </p>
+        </div>
+
+        <!-- Son 1 -->
+        <div class="brand-card bg-white text-center p-8">
+          <div class="w-24 h-24 rounded-full bg-navy mx-auto mb-5 flex items-center justify-center">
+            <span class="font-heading text-beige text-3xl font-bold">JO</span>
+          </div>
+          <h3 class="font-heading text-navy text-xl font-semibold">Team Lead</h3>
+          <p class="text-gold font-heading text-sm uppercase tracking-wider mt-1 mb-4">Foreman &amp; Project Coordinator</p>
+          <p class="text-navy/60 text-sm leading-relaxed">
+            Manages on-site crews, coordinates deliveries, and ensures projects
+            stay on schedule from start to finish.
+          </p>
+        </div>
+
+        <!-- Son 2 -->
+        <div class="brand-card bg-white text-center p-8">
+          <div class="w-24 h-24 rounded-full bg-navy mx-auto mb-5 flex items-center justify-center">
+            <span class="font-heading text-beige text-3xl font-bold">SO</span>
+          </div>
+          <h3 class="font-heading text-navy text-xl font-semibold">Estimator</h3>
+          <p class="text-gold font-heading text-sm uppercase tracking-wider mt-1 mb-4">Estimating &amp; Customer Relations</p>
+          <p class="text-navy/60 text-sm leading-relaxed">
+            Walks every project with customers, provides detailed estimates, and
+            stays in communication throughout the entire process.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VALUES ────────────────────────────────────────────── -->
+  <section class="py-20 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="section-label">How We Work</span>
+        <h2 class="font-heading text-cream text-4xl font-bold mt-1">Our Core Values</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {values.map(v => (
+          <div class="brand-card--light bg-navy/60 p-8 flex gap-5">
+            <div class="icon-box flex-shrink-0 border border-gold/40">
+              <svg class="w-6 h-6 text-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={v.icon} />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading text-cream text-lg font-semibold mb-2" set:html={v.title} />
+              <p class="text-cream/65 text-sm leading-relaxed">{v.body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SERVICE AREA ──────────────────────────────────────── -->
+  <section class="py-20 bg-cream-light">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="section-label">Where We Work</span>
+      <h2 class="font-heading text-navy text-4xl font-bold mt-1 mb-5">Service Area</h2>
+      <p class="text-navy/65 leading-relaxed mb-8">
+        We proudly serve Wichita and the surrounding communities throughout
+        Sedgwick County and beyond. If you're nearby, give us a call — we'll
+        let you know if we can make it work.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {['Wichita', 'Derby', 'Andover', 'Maize', 'Goddard', 'Valley Center', 'Haysville', 'Mulvane', 'El Dorado', 'Newton'].map(city => (
+          <span class="bg-white border border-navy rounded-brand px-4 py-2 font-heading text-sm text-navy uppercase tracking-wide">
+            {city}
+          </span>
+        ))}
+      </div>
+      <div class="mt-10">
+        <a href="/contact" class="btn btn-primary">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

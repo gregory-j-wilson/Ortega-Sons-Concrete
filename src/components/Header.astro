@@ -1,0 +1,84 @@
+---
+const navLinks = [
+  { href: '/',         label: 'Home' },
+  { href: '/about',    label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/contact',  label: 'Contact' },
+];
+
+const currentPath = Astro.url.pathname;
+
+function isActive(href: string) {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+}
+---
+
+<header class="bg-navy shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center flex-shrink-0">
+        <img
+          src="/img/ortega-and-sons--logo.png"
+          alt="Ortega & Sons Concrete"
+          class="h-14 w-auto"
+        />
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        {navLinks.map(link => (
+          <a
+            href={link.href}
+            class={`nav-link ${isActive(link.href) ? 'active' : ''}`}
+          >
+            {link.label}
+          </a>
+        ))}
+        <a href="/contact" class="btn btn-gold text-sm py-2 px-5 ml-2">
+          Get a Quote
+        </a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button
+        id="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        class="md:hidden text-cream p-1 focus:outline-none focus:ring-2 focus:ring-beige rounded"
+      >
+        <!-- Bars icon -->
+        <svg class="icon-bars h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Close icon -->
+        <svg class="icon-close h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-navy border-t border-gold/30">
+    <nav class="flex flex-col px-6 py-5 gap-5" aria-label="Mobile navigation">
+      {navLinks.map(link => (
+        <a
+          href={link.href}
+          class={`nav-link text-base ${isActive(link.href) ? 'active' : ''}`}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a href="/contact" class="btn btn-gold text-center mt-1">
+        Get a Quote
+      </a>
+    </nav>
+  </div>
+</header>
