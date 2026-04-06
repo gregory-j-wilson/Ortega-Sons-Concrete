@@ -3,42 +3,42 @@ import Layout from '../layouts/Layout.astro';
 
 const services = [
   {
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80',
+    img: '/img/criss-cross-driveway.jpeg',
     category: 'Residential',
     title: 'Driveways',
     desc: 'From standard broom-finish slabs to stamped and stained decorative driveways, we pour driveways that hold up to Kansas weather and heavy vehicle traffic. Proper base prep and reinforcement on every job.',
     features: ['Single & double-wide', 'Stamped & stained finishes', 'Apron replacement', 'Expansion joints included'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1523413555609-be67a1ede53e?auto=format&fit=crop&w=800&q=80',
+    img: '/img/hexagon-back-porch.jpeg',
     category: 'Residential',
     title: 'Patios &amp; Walkways',
     desc: 'Transform your backyard into a functional outdoor living space. We work with your landscaping layout to design and pour custom patios, sidewalks, and connecting walkways.',
     features: ['Custom shapes & borders', 'Exposed aggregate options', 'Step construction', 'Broom or smooth finish'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+    img: '/img/making-garage-driveway.jpeg',
     category: 'Residential',
     title: 'Garage &amp; Shop Floors',
     desc: 'A properly prepared and poured garage floor makes all the difference. We handle sub-grade prep, vapor barriers, reinforcement, and finishing so you get a floor that won\'t crack or heave.',
     features: ['Vapor barrier installation', 'Rebar & wire mesh', 'Control joint planning', 'Smooth or broom finish'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80',
+    img: '/img/laying-concrete-cones.jpeg',
     category: 'Commercial',
     title: 'Parking Lots &amp; Lots',
     desc: 'Commercial concrete parking areas designed for heavy vehicle loads and long-term durability. We coordinate with general contractors and work within project schedules.',
     features: ['ADA-compliant curb cuts', 'Reinforced for heavy loads', 'Line prep & marking ready', 'Phased pours available'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=80',
+    img: '/img/concrete-foundation-bars.jpeg',
     category: 'Commercial',
     title: 'Foundations &amp; Slabs',
     desc: 'Concrete foundations and flatwork for new construction, additions, and outbuildings. We work from engineered plans and coordinate with your framing crew.',
     features: ['Residential & light commercial', 'Engineered plan review', 'Slab-on-grade & stem wall', 'Anchor bolt placement'],
   },
   {
-    img: 'https://images.unsplash.com/photo-1590725140246-20acddc1ec6d?auto=format&fit=crop&w=800&q=80',
+    img: '/img/driveway-dirt.jpeg',
     category: 'Specialty',
     title: 'Concrete Repair &amp; Replacement',
     desc: 'Cracked, sunken, or deteriorated concrete? We assess the root cause and provide repair or full-replacement solutions to restore safety and appearance.',
@@ -59,11 +59,12 @@ const process = [
 
   <!-- ─── PAGE HERO ─────────────────────────────────────────── -->
   <section class="relative h-72 sm:h-96 flex items-end overflow-hidden">
-    <img
-      src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80"
-      alt="Concrete being poured"
+    <video
+      autoplay muted loop playsinline
       class="absolute inset-0 w-full h-full object-cover"
-    />
+    >
+      <source src="/img/smoothing-concrete.mp4" type="video/mp4" />
+    </video>
     <div class="page-hero-overlay absolute inset-0"></div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
       <span class="section-label">What We Offer</span>
@@ -117,8 +118,15 @@ const process = [
   </section>
 
   <!-- ─── OUR PROCESS ───────────────────────────────────────── -->
-  <section class="py-20 bg-navy">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="py-20 bg-navy relative overflow-hidden">
+    <video
+      autoplay muted loop playsinline
+      class="absolute inset-0 w-full h-full object-cover opacity-10"
+    >
+      <source src="/img/concrete-wood.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-navy/70"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-14">
         <span class="section-label">How It Works</span>
         <h2 class="font-heading text-cream text-4xl font-bold mt-1">Our Process</h2>

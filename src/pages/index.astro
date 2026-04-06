@@ -6,11 +6,12 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- ─── HERO ──────────────────────────────────────────────── -->
   <section class="relative min-h-[90vh] flex items-center overflow-hidden">
-    <img
-      src="/img/concrete.jpg"
-      alt="Concrete construction work"
+    <video
+      autoplay muted loop playsinline
       class="absolute inset-0 w-full h-full object-cover"
-    />
+    >
+      <source src="/img/laying-concrete-vid.mp4" type="video/mp4" />
+    </video>
     <div class="hero-overlay absolute inset-0"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
@@ -123,7 +124,7 @@ import Layout from '../layouts/Layout.astro';
 
         <div>
           <img
-            src="/img/men-working.jpg"
+            src="/img/laying-concrete-pic.jpeg"
             alt="Ortega & Sons Concrete crew at work"
             class="rounded-brand border border-gold/40 w-full h-[420px] object-cover"
           />
@@ -196,7 +197,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="brand-card bg-white group">
           <div class="overflow-hidden rounded-t-brand">
             <img
-              src="/img/driveway.jpg"
+              src="/img/front-driveway.jpeg"
               alt="Residential driveway project"
               class="project-img group-hover:scale-105 transition-transform duration-500"
             />
@@ -211,22 +212,22 @@ import Layout from '../layouts/Layout.astro';
         <div class="brand-card bg-white group">
           <div class="overflow-hidden rounded-t-brand">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
-              alt="Commercial concrete project"
+              src="/img/concrete-foundation-bars.jpeg"
+              alt="Commercial concrete foundation"
               class="project-img group-hover:scale-105 transition-transform duration-500"
             />
           </div>
           <div class="p-6">
             <span class="font-heading text-xs uppercase tracking-widest text-gold">Commercial</span>
-            <h3 class="font-heading text-navy text-lg font-semibold mt-1">Warehouse Loading Dock</h3>
-            <p class="text-navy/60 text-sm mt-2">Heavy-duty reinforced slab and apron for a distribution warehouse.</p>
+            <h3 class="font-heading text-navy text-lg font-semibold mt-1">Foundation &amp; Slab</h3>
+            <p class="text-navy/60 text-sm mt-2">Heavy-duty reinforced slab with rebar grid for a commercial build.</p>
           </div>
         </div>
 
         <div class="brand-card bg-white group">
           <div class="overflow-hidden rounded-t-brand">
             <img
-              src="/img/backyard-patio.jpg"
+              src="/img/back-patio.jpeg"
               alt="Concrete patio project"
               class="project-img group-hover:scale-105 transition-transform duration-500"
             />
@@ -244,9 +245,13 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- ─── CTA BANNER ────────────────────────────────────────── -->
   <section class="py-20 bg-navy relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10"
-      style="background-image: url('/img/pouring-concrete.jpg'); background-size: cover; background-position: center;">
-    </div>
+    <video
+      autoplay muted loop playsinline
+      class="absolute inset-0 w-full h-full object-cover opacity-20"
+    >
+      <source src="/img/ortega-sign-vid.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-navy/60"></div>
     <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <span class="section-label">Ready to Start?</span>
       <h2 class="font-heading text-cream text-4xl sm:text-5xl font-bold mt-2 mb-5">
