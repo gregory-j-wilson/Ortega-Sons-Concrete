@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 const services = [
   {
+    id: 'driveways',
     img: '/img/criss-cross-driveway.jpeg',
     category: 'Residential',
     title: 'Driveways',
@@ -10,6 +11,7 @@ const services = [
     features: ['Single & double-wide', 'Stamped & stained finishes', 'Apron replacement', 'Expansion joints included'],
   },
   {
+    id: 'patios-walkways',
     img: '/img/hexagon-back-porch.jpeg',
     category: 'Residential',
     title: 'Patios &amp; Walkways',
@@ -17,6 +19,7 @@ const services = [
     features: ['Custom shapes & borders', 'Exposed aggregate options', 'Step construction', 'Broom or smooth finish'],
   },
   {
+    id: 'garage-floors',
     img: '/img/making-garage-driveway.jpeg',
     category: 'Residential',
     title: 'Garage &amp; Shop Floors',
@@ -24,6 +27,7 @@ const services = [
     features: ['Vapor barrier installation', 'Rebar & wire mesh', 'Control joint planning', 'Smooth or broom finish'],
   },
   {
+    id: 'parking-lots',
     img: '/img/laying-concrete-cones.jpeg',
     category: 'Commercial',
     title: 'Parking Lots &amp; Lots',
@@ -31,6 +35,7 @@ const services = [
     features: ['ADA-compliant curb cuts', 'Reinforced for heavy loads', 'Line prep & marking ready', 'Phased pours available'],
   },
   {
+    id: 'foundations-slabs',
     img: '/img/concrete-foundation-bars.jpeg',
     category: 'Commercial',
     title: 'Foundations &amp; Slabs',
@@ -38,6 +43,7 @@ const services = [
     features: ['Residential & light commercial', 'Engineered plan review', 'Slab-on-grade & stem wall', 'Anchor bolt placement'],
   },
   {
+    id: 'concrete-repair',
     img: '/img/driveway-dirt.jpeg',
     category: 'Specialty',
     title: 'Concrete Repair &amp; Replacement',
@@ -88,7 +94,7 @@ const process = [
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map(s => (
-          <div class="brand-card bg-white flex flex-col group">
+          <div id={s.id} class="brand-card bg-white flex flex-col group">
             <div class="overflow-hidden rounded-t-brand">
               <img
                 src={s.img}
