@@ -43,6 +43,49 @@ const {
 
     <Footer />
 
+    <!-- GTranslate -->
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"languages":["en","es"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"left","switcher_vertical_position":"bottom","float_switcher_open_direction":"top","alt_flags":{"en":"usa","es":"mexico"}}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+    <!-- Back to Top -->
+    <button
+      id="back-to-top"
+      aria-label="Back to top"
+      style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;width:44px;height:44px;border-radius:10px;background-color:#1B2A47;border:1px solid #9B7B3C;color:#C9A96E;display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 0.3s ease,transform 0.3s ease;transform:translateY(8px);"
+    >
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+      </svg>
+    </button>
+    <script is:inline>
+      (function() {
+        var btn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 400) {
+            btn.style.opacity = '1';
+            btn.style.pointerEvents = 'auto';
+            btn.style.transform = 'translateY(0)';
+          } else {
+            btn.style.opacity = '0';
+            btn.style.pointerEvents = 'none';
+            btn.style.transform = 'translateY(8px)';
+          }
+        });
+        btn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        btn.addEventListener('mouseenter', function() {
+          btn.style.backgroundColor = '#9B7B3C';
+          btn.style.color = '#F5EDD6';
+        });
+        btn.addEventListener('mouseleave', function() {
+          btn.style.backgroundColor = '#1B2A47';
+          btn.style.color = '#C9A96E';
+        });
+      })();
+    </script>
+
     <script src="/js/main.js" defer is:inline></script>
   </body>
 </html>
